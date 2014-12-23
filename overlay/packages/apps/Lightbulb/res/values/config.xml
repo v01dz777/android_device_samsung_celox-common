@@ -17,5 +17,5 @@
 -->
 <resources>
     <!-- Camera flash (App) -->
-    <bool name="camera_has_flash">true</bool>
+    <!--<bool name="camera_has_flash">true</bool>-->
 </resources>
