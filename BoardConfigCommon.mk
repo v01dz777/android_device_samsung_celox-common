@@ -23,6 +23,7 @@ BOARD_KERNEL_BASE := 0x40400000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom usb_id_pin_rework=true no_console_suspend=true androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01400000
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8660-common
 
 # Recovery
