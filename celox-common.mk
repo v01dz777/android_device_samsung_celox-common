@@ -32,6 +32,10 @@ TARGET_SCREEN_HEIGHT := 800
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze
+
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
