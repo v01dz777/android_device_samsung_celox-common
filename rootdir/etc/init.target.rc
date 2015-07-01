@@ -27,7 +27,6 @@
 #
 #
 on early-init
-    mkdir /firmware 0771 system system
     symlink /data/tombstones /tombstones
     mkdir /efs 0771 system system
 
@@ -40,9 +39,6 @@ on fs
     mount_all fstab.qcom
 
 on post-fs-data
-    mkdir /system/etc/firmware/misc 0771 system system
-    mkdir /system/etc/firmware/misc_mdm 0771 system system
-
     write /sys/devices/i2c-0/0-0024/cyttsp_update_fw 1
 
     chown radio system /efs
