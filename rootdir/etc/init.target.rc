@@ -30,14 +30,6 @@ on early-init
     symlink /data/tombstones /tombstones
     mkdir /efs 0771 system system
 
-on fs
-    mkdir /data/tombstones 0771 system system
-    mkdir /tombstones/modem 0771 system system
-    mkdir /tombstones/mdm 0771 system system
-    mkdir /tombstones/lpass 0771 system system
-
-    mount_all fstab.qcom
-
 on post-fs-data
     write /sys/devices/i2c-0/0-0024/cyttsp_update_fw 1
 
