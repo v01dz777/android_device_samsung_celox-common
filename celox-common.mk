@@ -46,7 +46,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.target.rc
+    fstab.qcom \
+    init.qcom.efs.sync.sh \
+    init.qcom.rc \
+    init.qcom.power.rc \
+    init.target.rc \
+    ueventd.qcom.rc
+
+# TWRP Recovery
+PRODUCT_PACKAGES += \
+    postrecoveryboot.sh \
+    twrp.fstab
 
 # common msm8660
 $(call inherit-product, device/samsung/msm8660-common/msm8660.mk)
